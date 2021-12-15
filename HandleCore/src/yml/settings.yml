@@ -1,0 +1,24 @@
+# ===============
+# Handle Settings
+# ===============
+actions:
+  prefixes:
+    cmd-as-console: '[cmd_as_console]'
+    cmd-as-player: '[cmd_as_player]'
+    cmd-as-op: '[cmd_as_op]'
+    msg-as-console: '[msg_as_console]'
+    msg-as-player: '[msg_as_player]'
+    msg-to-player: '[msg_to_player]'
+    action-package: '[action_package]'
+misc:
+  line-splitter: '\\n'
+lang:
+  reload: '&6{0} &cv{1} &6loaded.'
+  version: '&6{0} &cv{1} &6- Developed by {2}'
+  command-usage-title: ' &e---- &cCommand Usage (/{0}) &e----'
+  command-usage-item: '&f/{0} &7- {1}.'
+  no-commands-to-show: '&fNo commands to show.'
+  no-command-permission: '&4You do not have access to that command.'
+  no-permission: '&4You do not have access to that.'
+  player-not-found: '&cError: &4Player &c{0} &4not found.'
+  sender-not-player: '&cError: &4Only players can use that command.'

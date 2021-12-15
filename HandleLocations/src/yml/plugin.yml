@@ -1,0 +1,13 @@
+name: HandleLocations
+main: com.j3kennard.bukkit.handle.locations.HandleLocations
+depend: [Handle]
+version: 0.1-p1
+api-version: 1.18
+author: Jeremy Kennard
+commands:
+  locations:
+    description: List locations.
+    aliases: [locs]
+  location:
+    description: Save and manage locations.
+    aliases: [loc]

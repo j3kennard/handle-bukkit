@@ -1,0 +1,12 @@
+name: Handle
+main: com.j3kennard.bukkit.handle.core.HandleCore
+depend: [PlaceholderAPI]
+version: 0.1-p1
+api-version: 1.18
+author: Jeremy Kennard
+commands:
+  handle:
+    description: Root command for the Handle plugin.
+permissions:
+  handle.*:
+    description: All plugin permissions.
