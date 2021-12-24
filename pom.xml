@@ -74,6 +74,6 @@
         <!-- The plugin version  -->
         <project.version.major>0</project.version.major>
         <project.version.minor>1</project.version.minor>
-        <project.version.patch>p2</project.version.patch>
+        <project.version.patch>p3</project.version.patch>
     </properties>
 </project>
