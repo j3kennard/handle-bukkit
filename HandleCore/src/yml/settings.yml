@@ -8,6 +8,7 @@ actions:
     cmd-as-op: '[cmd_as_op]'
     msg-as-console: '[msg_as_console]'
     msg-as-player: '[msg_as_player]'
+    msg-to-console: '[msg_to_console]'
     msg-to-player: '[msg_to_player]'
     action-package: '[action_package]'
 misc:

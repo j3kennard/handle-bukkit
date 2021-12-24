@@ -24,7 +24,7 @@ public class LocationCommandExecutor implements CommandExecutor
 	{
 		coreSettingsFile = HandleCore.getFilingCabinet().getConfiguration("settings.yml");
 		settingsFile = HandleCore.getFilingCabinet().getConfiguration("locations/settings.yml");
-		locationsFile = HandleCore.getFilingCabinet().getConfiguration("locations/locations.yml");
+		locationsFile = HandleCore.getFilingCabinet().getConfiguration("locations/storage.yml");
 		
 		// Checks to see if the player has permission for "/location"
 		if (sender.hasPermission("handle.cmd.location"))
@@ -75,7 +75,7 @@ public class LocationCommandExecutor implements CommandExecutor
 									locationsFile.set(args[1] + ".location.z", location.getZ());
 									locationsFile.set(args[1] + ".location.yaw", location.getYaw());
 									locationsFile.set(args[1] + ".location.pitch", location.getPitch());
-									HandleCore.getFilingCabinet().saveDataFile("locations/locations.yml");
+									HandleCore.getFilingCabinet().saveDataFile("locations/storage.yml");
 									
 									FormatUtility.sendFormattedMessage(sender,
 											settingsFile.getString("lang.location-set")
@@ -205,7 +205,7 @@ public class LocationCommandExecutor implements CommandExecutor
 									if (locationName != null)
 									{
 										locationsFile.set(locationName, null);
-										HandleCore.getFilingCabinet().saveDataFile("locations/locations.yml");
+										HandleCore.getFilingCabinet().saveDataFile("locations/storage.yml");
 										
 										FormatUtility.sendFormattedMessage(sender,
 												settingsFile.getString("lang.location-unset")

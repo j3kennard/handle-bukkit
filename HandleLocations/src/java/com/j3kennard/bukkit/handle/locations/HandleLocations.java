@@ -10,7 +10,7 @@ public class HandleLocations extends JavaPlugin
 	{
 		// Adds data files to be managed by Handle's FilingCabinet
 		HandleCore.getFilingCabinet().addDataFile("locations/settings.yml");
-		HandleCore.getFilingCabinet().addDataFile("locations/locations.yml");
+		HandleCore.getFilingCabinet().addDataFile("locations/storage.yml");
 		
 		// Registers commands
 		getCommand("location").setExecutor(new LocationCommandExecutor());

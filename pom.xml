@@ -51,6 +51,17 @@
         <resources>
             <resource>
                 <directory>src/yml</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/yml</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>plugin.yml</exclude>
+                </excludes>
             </resource>
         </resources>
     </build>
@@ -63,6 +74,6 @@
         <!-- The plugin version  -->
         <project.version.major>0</project.version.major>
         <project.version.minor>1</project.version.minor>
-        <project.version.patch>p1</project.version.patch>
+        <project.version.patch>p2</project.version.patch>
     </properties>
 </project>

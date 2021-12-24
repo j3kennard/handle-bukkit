@@ -74,7 +74,7 @@ public class Actor
 					settingsFile.getString("actions.prefixes.msg-as-player").length()).trim();
 			actions.add(new MsgAsPlayerAction(actionString, targetPlayer));
 		}
-		else if (actionString.startsWith(settingsFile.getString("actions.prefixes.msg-as-console")))
+		else if (actionString.startsWith(settingsFile.getString("actions.prefixes.msg-to-console")))
 		{
 			actionString = actionString.substring(
 					settingsFile.getString("actions.prefixes.msg-to-console").length()).trim();

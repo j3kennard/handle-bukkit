@@ -1,7 +1,7 @@
 name: HandleLocations
 main: com.j3kennard.bukkit.handle.locations.HandleLocations
 depend: [Handle]
-version: 0.1-p1
+version: ${project.version}-${project.version.patch}
 api-version: 1.18
 author: Jeremy Kennard
 commands:

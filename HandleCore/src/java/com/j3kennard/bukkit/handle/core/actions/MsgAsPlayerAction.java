@@ -1,9 +1,7 @@
 package com.j3kennard.bukkit.handle.core.actions;
 
 import com.j3kennard.bukkit.handle.core.util.FormatUtility;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
 public class MsgAsPlayerAction extends Action
 {
@@ -23,11 +21,6 @@ public class MsgAsPlayerAction extends Action
 	
 	public void run()
 	{
-		new BukkitRunnable() {
-			@Override
-			public void run() {
-				targetPlayer.chat(FormatUtility.formatMessage(actionString));
-			}
-		}.runTask(Bukkit.getPluginManager().getPlugin("Handle"));
+		targetPlayer.chat(FormatUtility.formatMessage(actionString));
 	}
 }

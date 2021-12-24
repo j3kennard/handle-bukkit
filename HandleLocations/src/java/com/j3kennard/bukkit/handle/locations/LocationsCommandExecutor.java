@@ -25,7 +25,7 @@ public class LocationsCommandExecutor implements CommandExecutor
 	{
 		coreSettingsFile = HandleCore.getFilingCabinet().getConfiguration("settings.yml");
 		settingsFile = HandleCore.getFilingCabinet().getConfiguration("locations/settings.yml");
-		locationsFile = HandleCore.getFilingCabinet().getConfiguration("locations/locations.yml");
+		locationsFile = HandleCore.getFilingCabinet().getConfiguration("locations/storage.yml");
 		
 		// Checks to see if the sender has permission for "/locations"
 		if (sender.hasPermission("core.cmd.locations"))
